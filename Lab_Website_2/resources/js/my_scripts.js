@@ -159,7 +159,7 @@ function loadPlayersPage(){
 		var playerAnchor = document.createElement('a');
 		playerAnchor.setAttribute("href","#");
 		playerAnchor.setAttribute("class","dropdown-item");
-		playerAnchor.setAttribute("onclick",switchPlayers(i));
+		playerAnchor.setAttribute("onclick","switchPlayers(" + i.toString() + ")");
 		playerAnchor.innerHTML = players[i].name;
 		document.getElementById("player_selector").appendChild(playerAnchor);
 	}
